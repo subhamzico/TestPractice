@@ -27,6 +27,11 @@
     "@aws-cdk/core:target-partitions": [
       "aws",
       "aws-cn"
-    ]
+    ],
+    "dev":{
+      "Stage":"dev", 
+      "AWSAccountID": "874320221671",
+      "Region": "us-east-1"
+    }
   }
 }

@@ -1,0 +1,201 @@
+{
+  "version": "16.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "MyStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "MyStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/MyStack/MyBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyBucketF68F3FF0",
+            "trace": [
+              "new Bucket (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:1664:22)",
+              "new CdkPocStack (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\lib\\cdk-poc-stack.ts:13:23)",
+              "Main (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\bin\\cdk-poc.ts:12:23)",
+              "Object.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\bin\\cdk-poc.ts:20:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/MyStack/MyBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyBucketPolicyE7FBAC7B",
+            "trace": [
+              "new BucketPolicy (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket-policy.ts:53:21)",
+              "Bucket.addToResourcePolicy (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:605:21)",
+              "Function.addToPrincipalOrResource (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:143:45)",
+              "Bucket.grant (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:913:27)",
+              "Bucket.grantRead (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:729:17)",
+              "new CdkPocStack (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\lib\\cdk-poc-stack.ts:22:15)",
+              "Main (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\bin\\cdk-poc.ts:12:23)",
+              "Object.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\bin\\cdk-poc.ts:20:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/MyStack/MyOAI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyOAID7163411",
+            "trace": [
+              "new OriginAccessIdentity (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\aws-cloudfront\\lib\\origin-access-identity.ts:112:21)",
+              "new CdkPocStack (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\lib\\cdk-poc-stack.ts:18:17)",
+              "Main (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\bin\\cdk-poc.ts:12:23)",
+              "Object.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\bin\\cdk-poc.ts:20:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/MyStack/MyCachePolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyCachePolicyAB35B4E5",
+            "trace": [
+              "new CachePolicy (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\aws-cloudfront\\lib\\cache-policy.ts:146:22)",
+              "new CdkPocStack (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\lib\\cdk-poc-stack.ts:24:27)",
+              "Main (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\bin\\cdk-poc.ts:12:23)",
+              "Object.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\bin\\cdk-poc.ts:20:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/MyStack/MyDistribution/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyDistribution6271DFB5",
+            "trace": [
+              "new Distribution (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\aws-cloudfront\\lib\\distribution.ts:291:26)",
+              "new CdkPocStack (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\lib\\cdk-poc-stack.ts:32:16)",
+              "Main (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\bin\\cdk-poc.ts:12:23)",
+              "Object.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\bin\\cdk-poc.ts:20:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Module.m._compile (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1072:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)",
+              "Module.load (internal/modules/cjs/loader.js:937:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:778:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/MyStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:180:23)",
+              "process.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\app.ts:131:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/MyStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:31:27)",
+              "C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:180:23)",
+              "process.<anonymous> (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\@aws-cdk\\core\\lib\\app.ts:131:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (C:\\Users\\subhampaul6\\Desktop\\CDK-POC\\node_modules\\source-map-support\\source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "MyStack"
+    }
+  }
+}
